@@ -1,0 +1,16 @@
+:root {
+    --bg: #000000;
+    --panel: #0a0a0a;
+    --topbar: #111111;
+    --border: #232323;
+    --text: #e6e6e6;
+    --muted: #8f8f8f;
+
+    --prompt: #ffb86c;
+    --link: #7aa2f7;
+    --cyan: #8be9fd;
+    --green: #50fa7b;
+    --red: #ff5f56;
+    --yellow: #ffbd2e;
+    --lime: #27c93f;
+}

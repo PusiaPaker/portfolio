@@ -1,0 +1,17 @@
+.content {
+    padding: 22px 24px 34px;
+    line-height: 1.7;
+}
+
+.terminal-entry {
+    margin-bottom: 96px;
+    scroll-margin-top: 56px;
+}
+
+.terminal-entry:first-of-type {
+    margin-bottom: 28px;
+}
+
+#nav {
+    margin-bottom: 42px;
+}

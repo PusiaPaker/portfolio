@@ -1,0 +1,7 @@
+body {
+    font-family: "SFMono-Regular", "JetBrains Mono", "Fira Code", "Cascadia Code", Consolas, monospace;
+}
+
+.muted {
+    color: var(--muted);
+}

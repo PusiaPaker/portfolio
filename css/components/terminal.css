@@ -1,0 +1,52 @@
+.terminal {
+    width: min(1180px, 100%);
+    margin: 0 auto;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.72);
+}
+
+.prompt-line {
+    margin: 0 0 14px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    min-height: 1.7em;
+}
+
+.prompt {
+    color: var(--prompt);
+}
+
+.output {
+    display: block;
+    padding-left: 2px;
+    max-width: 110ch;
+    opacity: 0;
+    transform: translateY(-6px);
+    clip-path: inset(0 0 100% 0);
+    pointer-events: none;
+}
+
+.output.visible {
+    opacity: 1;
+    transform: translateY(0);
+    clip-path: inset(0 0 0 0);
+    pointer-events: auto;
+    transition:
+        opacity 180ms ease,
+        transform 220ms ease,
+        clip-path 260ms ease;
+}
+
+.final-line {
+    display: none;
+    color: var(--text);
+    min-height: 1.7em;
+    margin-top: 10px;
+}
+
+.final-line.visible {
+    display: block;
+}

@@ -1,0 +1,21 @@
+.project-list {
+    display: grid;
+    gap: 26px;
+}
+
+.project-item {
+    border-left: 1px solid #1f1f1f;
+    padding-left: 14px;
+}
+
+.project-name {
+    color: var(--green);
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.project-stack {
+    color: var(--muted);
+    margin-top: 4px;
+    font-size: 0.95rem;
+}

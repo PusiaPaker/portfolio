@@ -1,0 +1,22 @@
+.cat-wrap {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 22px;
+    align-items: start;
+    max-width: 950px;
+}
+
+.cat-photo {
+    width: 220px;
+    height: 220px;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+    object-fit: cover;
+    display: block;
+}
+
+.cat-title {
+    color: var(--green);
+    margin-bottom: 8px;
+    font-weight: 600;
+}

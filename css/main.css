@@ -1,0 +1,16 @@
+@import url("./base/variables.css");
+@import url("./base/reset.css");
+@import url("./base/text.css");
+@import url("./base/layout.css");
+
+@import url("./components/terminal.css");
+@import url("./components/topbar.css");
+@import url("./components/navigation.css");
+@import url("./components/fastfetch.css");
+@import url("./components/projects.css");
+@import url("./components/contact.css");
+@import url("./components/cat.css");
+@import url("./components/scroll-top.css");
+
+@import url("./util/animations.css");
+@import url("./util/media.css");

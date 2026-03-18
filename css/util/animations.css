@@ -1,0 +1,16 @@
+.cursor,
+.typing-cursor {
+    display: inline-block;
+    width: 10px;
+    height: 1.08em;
+    background: var(--text);
+    vertical-align: -0.16em;
+    margin-left: 4px;
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}

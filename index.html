@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antoni | Terminal Portfolio</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <a href="#top" class="scroll-top" aria-label="Scroll to top">↑</a>
+
+    <div class="terminal" id="top">
+        <div class="topbar">
+            <div class="window-buttons" aria-hidden="true">
+                <span class="close"></span>
+                <span class="minimize"></span>
+                <span class="maximize"></span>
+            </div>
+            <div class="title">antoni@portfolio.achelsto.com: ~</div>
+            <div class="shell-tag">kitty</div>
+        </div>
+
+        <main class="content">
+            <section class="terminal-entry">
+                <div class="prompt-line" data-command="ssh antoni@portfolio.achelsto.com"></div>
+                <div class="output muted" data-login-line></div>
+            </section>
+
+            <section class="terminal-entry" id="nav">
+                <div class="prompt-line" data-command="ls"></div>
+                <div class="output">
+                    <nav class="nav-links" aria-label="Portfolio navigation">
+                        <a href="#home">./home</a>
+                        <a href="#about">./about</a>
+                        <a href="#projects">./projects</a>
+                        <a href="#contact">./contact</a>
+                        <a href="#cat">./cat</a>
+                    </nav>
+                </div>
+            </section>
+
+            <section class="terminal-entry" id="home">
+                <div class="prompt-line" data-command="fastfetch"></div>
+                <div class="output">
+                    <div class="fastfetch">
+                        <pre class="ascii">                         ,
+  ,-.       _,---._ __  / \
+ /  )    .-'       `./ /   \
+(  (   ,'            `/    /|
+ \  `-"             \'\   / |
+  `.              ,  \ \ /  |
+   /`.          ,'-`----Y   |
+  (            ;        |   '
+  |  ,-.    ,-'         |  /
+  |  | (   |            | /
+  )  |  \  `.___________|/
+  `--'   `--'</pre>
+                        <div class="ff-info">
+                            <div class="ff-user">antoni@portfolio</div>
+                            <div class="ff-rule">-------------------</div>
+
+                            <div class="ff-line"><span class="ff-key">University: </span>Kent State University</div>
+                            <div class="ff-line"><span class="ff-key">Major: </span>Computer Science</div>
+                            <div class="ff-line"><span class="ff-key">Terminal: </span>Browser</div>
+                            <div class="ff-line"><span class="ff-key">Kernel: </span>TempleOS-based-kernel</div>
+                            <div class="ff-line"><span class="ff-key">Shell: </span>Bash</div>
+                            <div class="ff-line"><span class="ff-key">Uptime: </span>420 days, 6 hours, 9 minutes</div>
+                            <div class="ff-line"><span class="ff-key">Country of Origin: </span>Poland</div>
+                            <div class="ff-line"><span class="ff-key">Cat: </span>yesss</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="terminal-entry" id="about">
+                <div class="prompt-line" data-command="cat about.txt"></div>
+                <div class="output">
+                    I am Antoni Chelstowski, originally from Poland now living in the beautiful state of Ohio in the
+                    United States of America. I am currently in my last semester of Computer Science at Kent State
+                    University. Since a young age I've always found passion in all sort of computuer related things,
+                    from coding, building PCs, to setting up servers. I am very passionate about wokring with servers,
+                    currently I have over 3 different home server setups, each running proxmox in a cluster. In those
+                    I've ran all sort of Virtual Machines for different purposes, from hosting simple game servers for
+                    my friends to setting up backend and postgresql databases for class. All of those I run on linux, I
+                    like linux a lot (I use arch btw.) at some point I would like to be a contributor to the linux
+                    project.
+                </div>
+            </section>
+
+            <section class="terminal-entry" id="projects">
+                <div class="prompt-line" data-command="./projects --list"></div>
+                <div class="output">
+                    <div class="project-list">
+                        <div class="project-item">
+                            <div class="project-name">&gt; CDMP</div>
+                            <div>Consulting Data Management Platform made for a capstone project, a group collaborative
+                                platfrom for managing projects</div>
+                            <div class="project-stack">stack: Flask, SQLAlchemy, HTML, CSS, JavaScript</div>
+                            <a class="project-link" href="https://github.com/PusiaPaker/CDMP" target="_blank"
+                                rel="noreferrer">repo: github.com/PusiaPaker/CDMP</a>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-name">&gt; cursor</div>
+                            <div>A C++ terminal cursor and styling library made out of frustration while using C++</div>
+                            <div class="project-stack">stack: C++, system dependant calls</div>
+                            <a class="project-link" href="https://github.com/PusiaPaker/cursor" target="_blank"
+                                rel="noreferrer">repo: github.com/PusiaPaker/cursor</a>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-name">&gt; ProjectionMatrixCube</div>
+                            <div>Just a small simple project done back in the high school days that focuses on a simple
+                                rotating cube using matrix projection</div>
+                            <div class="project-stack">stack: HTML, JavaScript</div>
+                            <a class="project-link" href="https://github.com/PusiaPaker/ProjectionMatrixCube"
+                                target="_blank" rel="noreferrer">repo: github.com/PusiaPaker/ProjectionMatrixCube</a>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-name">&gt; dotfiles</div>
+                            <div>Not a project, but just my dotfiles. Often used when setting up new systems or simply
+                                sharing with another person</div>
+                            <div class="project-stack">stack: shell config, linux personalization</div>
+                            <a class="project-link" href="https://github.com/PusiaPaker/dotfiles" target="_blank"
+                                rel="noreferrer">repo: github.com/PusiaPaker/dotfiles</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="terminal-entry" id="contact">
+                <div class="prompt-line" data-command="contact --show"></div>
+                <div class="output">
+                    <div class="contact-list">
+                        <div class="contact-item">
+                            <pre class="contact-ascii">  ____ ___ _____ _   _ _   _ ____  
+ / ___|_ _|_   _| | | | | | | __ ) 
+| |  _ | |  | | | |_| | | | |  _ \
+| |_| || |  | | |  _  | |_| | |_) |
+ \____|___| |_| |_| |_|\___/|____/ </pre>
+                            <div>
+                                <div class="contact-title">&gt; GitHub</div>
+                                <div class="muted">BRO PLEASE ADD ME ON GITHUB PLAESE PLEASE PLEASE</div>
+                                <a class="contact-link" href="https://github.com/PusiaPaker" target="_blank"
+                                    rel="noreferrer">github.com/PusiaPaker</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <pre class="contact-ascii"> _____ __  __    _    ___ _     
+| ____|  \/  |  / \  |_ _| |    
+|  _| | |\/| | / _ \  | || |    
+| |___| |  | |/ ___ \ | || |___ 
+|_____|_|  |_/_/   \_\___|_____|</pre>
+                            <div>
+                                <div class="contact-title">&gt; Email</div>
+                                <div class="muted">I'll check it at some point :)</div>
+                                <a class="contact-link" href="mailto:me@achelsto.com">me@achelsto.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="terminal-entry" id="cat">
+                <div class="prompt-line" data-command="cat mary-jane.txt"></div>
+                <div class="output">
+                    <div class="cat-wrap">
+                        <img class="cat-photo" src="assets/cat.png" alt="Mary Jane the cat" />
+                        <div>
+                            <div class="cat-title">&gt; my cat</div>
+                            <div>
+                                This is my beautiful little kitty, her name is Mary Jane. She is the brain behind my
+                                whole coding career, from helping me debug my code by stepping all over my keyboard, to
+                                silently judging my bad code from the top of her cat tree. Couple of her specialties are
+                                suspicious stare-downs, zoomies, and looking extra cute when there's a lot of school
+                                work.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="final-line" id="final-line">[antoni@portfolio.achelsto.com] =&gt; ~ $<span
+                    class="cursor"></span></div>
+        </main>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
